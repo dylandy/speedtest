@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require "thor"
+require "bundler/setup"
+require "speedtest"
+
+class Auto < Thor
+
+  desc "check", "run speedtest"
+
+  method_option :json
+  def check 
+    unless options[:json]
+      Speedtest::Speedtest.new.run
+    else
+      File.open("check.json", "w"){|f| f.write(Speedtest::Speedtest.new.run.to_json)}
+    end
+  end
+end
+Auto.start(ARGV)

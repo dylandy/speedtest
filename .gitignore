@@ -1,0 +1,15 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+*.swp
+.rake_t_cache
+*.lock
+
+# rspec failure tracking
+.rspec_status
+
