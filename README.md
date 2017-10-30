@@ -1,7 +1,7 @@
 # Speedtest
 
 Tiny speedtest.net command line tool in ruby.
-Heavily inspired by (speedtest.rb)[https://github.com/lacostej/speedtest.rb] 
+Heavily inspired by [speedtest.rb](https://github.com/lacostej/speedtest.rb)
 
 ## Installation
 
